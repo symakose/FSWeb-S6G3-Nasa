@@ -4,12 +4,10 @@ import { sahteVeri } from "./sahteVeri/sahteVeri";
 
 function App() {
   const [dateBaslik, setDateBaslik] = useState();
-  const [head, setHead] = useState();
   const [paragraf, setParagraf] = useState();
   const [date, setDate] = useState();
   const [title, setTitle] = useState();
   const [url, setUrl] = useState();
-  const [expBaslik, setExpBaslik] = useState();
   const [explanation, setExplanation] = useState();
   const [count, setCount] = useState(0);
   const [buton, setButon] = useState("");
@@ -46,9 +44,18 @@ function App() {
       </div>
       <div>
         <p>
-          <b>explanation: </b> {explanation}
+          <b>Explanation: </b> {explanation}
         </p>
       </div>
+      <center>
+        <b> M82: Galaxy with a Supergalactic Wind </b>
+        <a href="https://www.nasa.gov/">NASA</a>,
+        <a href="https://www.esa.int/">ESA</a>,
+        <a href="https://www.nasa.gov/mission_pages/hubble/story/index.html">
+          Hubble
+        </a>
+        ;
+      </center>
       <button onClick={butonCalistir}>{buton}</button>
     </div>
   );
