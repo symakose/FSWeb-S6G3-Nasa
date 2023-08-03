@@ -8,22 +8,22 @@ const AppDiv = styled.div`
 `;
 const AppHead = styled.div`
   background-color: #b0c4de;
+  color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: white;
 `;
 const AppButton = styled.button`
   padding: 10px 5px;
   border: 2px solid rgb(70, 30, 180);
   border-radius: 25px;
+  color: white;
   cursor: pointer;
   font-size: 16px;
   background-color: #00bfff;
-  color: white;
 `;
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
     setCount(count + 1);
     setButon("Tomorrow");
   };
+
   useEffect(() => {
     if (count < sahteVeri.length) {
       const data = sahteVeri[count];
